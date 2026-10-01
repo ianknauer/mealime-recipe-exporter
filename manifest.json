@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Recipe Exporter for Mealime (Unofficial)",
+  "short_name": "Recipe Export",
+  "version": "0.3.0",
+  "description": "By BellaNora, a Canadian meal planner. Unofficial, not affiliated with Mealime. Save your Mealime recipes before the shutdown.",
+  "action": {
+    "default_title": "Export my Mealime recipes (open this on app.mealime.com or my.mealime.com)",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "downloads",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://app.mealime.com/*",
+    "https://my.mealime.com/*",
+    "https://cdn-recipes.mealime.com/*",
+    "https://cdn-uploads.mealime.com/*"
+  ],
+  "homepage_url": "https://bellanora.ca/recipe-exporter/"
+}

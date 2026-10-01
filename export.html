@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Recipe Exporter for Mealime</title>
+  <link rel="icon" href="icons/icon32.png">
+  <link rel="stylesheet" href="export.css">
+</head>
+<body>
+  <main>
+    <h1>Recipe Exporter for Mealime</h1>
+    <p class="by">Made by <a href="https://bellanora.ca/?utm_source=recipe-exporter" target="_blank" rel="noopener">BellaNora</a>, a Canadian meal planner.</p>
+    <p class="unofficial">Unofficial tool. Not affiliated with or endorsed by Mealime.</p>
+    <p class="lede">Saves your Mealime recipes (photos, ingredients, steps and nutrition) into a single zip on your computer. On my.mealime.com it also saves your current meal plan, the recipes you created yourself, and your recipe notes. Nothing is sent anywhere except Mealime.</p>
+    <p class="req"><b>You need to be on <a href="https://my.mealime.com/" target="_blank" rel="noopener">my.mealime.com</a> or <a href="https://app.mealime.com/" target="_blank" rel="noopener">app.mealime.com</a> and logged in</b>, then click the extension icon from that tab.</p>
+
+    <ol class="how">
+      <li>Open <a href="https://my.mealime.com/" target="_blank" rel="noopener">my.mealime.com</a> (or app.mealime.com) and log in.</li>
+      <li>From that tab, click the extension icon. This page opens next to it.</li>
+      <li>Click <b>Export my recipes</b>. It takes about a minute for ~150 recipes.</li>
+      <li>Unzip it and open <code>index.html</code>.</li>
+    </ol>
+
+    <label class="opt"><input type="checkbox" id="photos" checked> Include photos</label>
+
+    <p id="ready" class="ready" role="status" aria-live="polite"></p>
+    <button id="go" class="primary" disabled>Export my recipes</button>
+
+    <section id="status" hidden>
+      <div class="bar"><div id="fill"></div></div>
+      <p id="msg" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="error" class="error" hidden>
+      <p id="errmsg"></p>
+      <p><a href="https://app.mealime.com/" target="_blank" rel="noopener" id="openMealime" hidden>Open Mealime</a></p>
+    </section>
+
+    <section id="done" class="done" hidden>
+      <p id="donemsg"></p>
+      <button id="again">Download again</button>
+      <p class="next">Looking for somewhere to cook from next? <a href="https://bellanora.ca/?utm_source=recipe-exporter" target="_blank" rel="noopener">BellaNora</a> is a meal planner made in BC, with a shared grocery list, cook mode and your own recipes.</p>
+    </section>
+  </main>
+  <script src="vendor/jszip.js"></script>
+  <script src="lib/transform.js"></script>
+  <script src="lib/cookbook.js"></script>
+  <script src="export.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "recipe-exporter-for-mealime",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Unofficial Chrome extension that exports your Mealime recipes, meal plan and notes before the shutdown.",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:e2e": "node test/e2e.mjs",
+    "zip": "rm -f dist/recipe-exporter-for-mealime.zip && mkdir -p dist && zip -r dist/recipe-exporter-for-mealime.zip manifest.json background.js export.html export.css export.js lib vendor icons -x '*.DS_Store'"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.0"
+  }
+}
