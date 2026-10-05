@@ -13,9 +13,13 @@ Made by [BellaNora](https://bellanora.ca/?utm_source=github), a Canadian meal pl
 | Recipes you created yourself | | ✓ |
 | Your recipe notes | | ✓ |
 
-## Install (about 2 minutes)
+## Install
 
-The extension is waiting for Chrome Web Store review. Until then, you can install it straight from here. It works in Chrome, Edge, Brave and other Chromium browsers on a computer (not on phones).
+**[Add to Chrome from the Chrome Web Store](https://chromewebstore.google.com/detail/recipe-exporter-for-meali/fjgiehibnolnihlanldlbcgjmcghlilc)** (free). It works in Chrome, Edge, Brave and other Chromium browsers on a computer, not on phones. In Edge, click **Allow extensions from other stores** when asked.
+
+### Install it yourself instead
+
+If you'd rather not use the store, or your browser can't install from it, load it straight from here:
 
 1. **Download** [recipe-exporter-for-mealime.zip](https://github.com/ianknauer/mealime-recipe-exporter/releases/latest/download/recipe-exporter-for-mealime.zip) and **unzip it**. Double-clicking it on a Mac or choosing *Extract All* on Windows gives you a folder. Keep that folder somewhere you won't delete it until you're done.
 2. In Chrome, go to **`chrome://extensions`** (type it in the address bar).
@@ -40,7 +44,7 @@ Everything happens in your browser. The extension only talks to Mealime, only wh
 
 ## Remove it
 
-Once you have your zip, go to `chrome://extensions`, click **Remove** on the exporter, and turn Developer mode back off. Your zip stays where it is.
+Once you have your zip, right-click the exporter's icon and choose **Remove from Chrome** (or click **Remove** in `chrome://extensions`). If you installed it by hand, also turn Developer mode back off. Your zip stays where it is.
 
 ## For developers
 
